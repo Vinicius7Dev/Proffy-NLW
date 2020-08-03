@@ -1,0 +1,43 @@
+import React from 'react';
+
+import './styles.css'
+
+import logo from '../../assets/images/logo.svg';
+import landingImg from '../../assets/images/landing.svg';
+
+import studyIc from '../../assets/images/icons/study.svg';
+import giveClassesIc from '../../assets/images/icons/give-classes.svg';
+import purpleHeartIc from '../../assets/images/icons/purple-heart.svg';
+
+function Landing() {
+    return (
+        <div id="page-landing">
+            <div id="page-landing-content" className="container">
+                <div className="img-logo-container">
+                    <img src={logo} alt="Proffy"/>
+                    <h2>Sua plataforma de estudos online.</h2>
+                </div>
+
+                <img src={landingImg} alt="Plataforma de estudos" className="hero-img"/>
+
+                <div className="buttons-container">
+                    <a href="#" className="study">
+                        <img src={studyIc} alt="Estudar"/>
+                        Estudar
+                    </a>
+
+                    <a href="#" className="give-classes">
+                        <img src={giveClassesIc} alt="Dar aulas"/>
+                        Dar Aulas
+                    </a>
+                </div>
+
+                <span className="total-connections">
+                    Total de 200 conexões já realizadas
+                    <img src={purpleHeartIc} alt="Coração roxo"/>
+                </span>
+            </div>
+        </div>
+    );
+}
+export default Landing;
