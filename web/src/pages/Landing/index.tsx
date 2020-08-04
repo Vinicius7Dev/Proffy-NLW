@@ -1,7 +1,5 @@
 import React from 'react';
 
-import './styles.css'
-
 import logo from '../../assets/images/logo.svg';
 import landingImg from '../../assets/images/landing.svg';
 
@@ -9,11 +7,13 @@ import studyIc from '../../assets/images/icons/study.svg';
 import giveClassesIc from '../../assets/images/icons/give-classes.svg';
 import purpleHeartIc from '../../assets/images/icons/purple-heart.svg';
 
+import './styles.css';
+
 function Landing() {
     return (
         <div id="page-landing">
             <div id="page-landing-content" className="container">
-                <div className="img-logo-container">
+                <div className="logo-container">
                     <img src={logo} alt="Proffy"/>
                     <h2>Sua plataforma de estudos online.</h2>
                 </div>

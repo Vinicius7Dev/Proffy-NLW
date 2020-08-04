@@ -10,7 +10,7 @@
     background: var(--color-primary);
 }
 
-.img-logo-container img{
+.logo-container img{
     height: 10rem;
 }
 
@@ -18,12 +18,12 @@
     width: 100%;
 }
 
-.img-logo-container {
-    align-items: center;
+.logo-container {
+    text-align: center;
     margin-bottom: 3.2rem;
 }
 
-.img-logo-container h2 {
+.logo-container h2 {
     font-weight: 500;
     font-size: 2.4rem;
     line-height: 4.6rem;
@@ -68,8 +68,13 @@
 .buttons-container .study:hover {
     background-color: var(--color-primary-light);
 }
+
 .buttons-container .give-classes:hover {
     background-color: var(--color-secundary-dark);
+}
+
+.buttons-container a img {
+    margin-right: 2.4rem;
 }
 
 .total-connections {
@@ -81,4 +86,51 @@
 
 .total-connections img {
     margin-left: 0.8rem;
+}
+
+@media (min-width: 1100px) {
+    #page-landing-content {
+        max-width: 1100px;
+        display: grid;
+        grid-template-rows: 350px 1fr;
+        grid-template-columns: 2fr 1fr 1fr;
+        grid-template-areas:
+            "logo hero hero"
+            "buttons buttons connections";
+    }
+
+    .logo-container {
+        grid-area: logo;
+        align-self: center;
+        text-align: left;
+        margin: 0;
+    }
+
+    .hero-img {
+        grid-area: hero;
+        justify-self: end;
+    }
+
+    .logo-container h2 {
+        text-align: initial;
+        font-size: 3.6rem;
+    }
+
+    .logo.container img {
+        height: 100%;
+    }
+
+    .buttons-container {
+        grid-area: buttons;
+        justify-content: flex-start;
+    }
+
+    .buttons-container a {
+        font-size: 2.4rem;
+    }
+
+    .total-connections {
+        grid-area: connections;
+        justify-self: end;
+    }
 }
