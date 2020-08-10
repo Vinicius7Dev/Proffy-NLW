@@ -20,6 +20,12 @@ const styles = StyleSheet.create({
         lineHeight: 32,
         fontSize: 24,
         color: '#FFF'
+    },
+
+    header: {
+        flexDirection: 'row',
+        justifyContent: 'space-between',
+        alignItems: 'center'
     }
     
 });
